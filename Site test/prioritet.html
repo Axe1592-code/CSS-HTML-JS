@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="prioritet.css">
+    <link rel="stylesheet" href="Video.css">
+    <script src="script_1_site.js"></script>
+  </head> 
+  <body>
+    <div id="loading"></div>
+    <script>
+     var opts = {
+      lines: 13, // Число линий для рисования
+      length: 0, // Длина каждой линии
+      width: 10, // Толщина линии
+      radius: 30, // Радиус внутреннего круга
+      corners: 1, // Скругление углов (0..1)
+      rotate: 0, // Смещение вращения
+      direction: 1, // 1: по часовой стрелке, -1: против часовой стрелки
+      color: '#000', // #rgb или #rrggbb или массив цветов
+      speed: 2.2, // Кругов в секунду
+      trail: 17, // Послесвечение
+      shadow: false, // Тень(true - да; false - нет)
+      hwaccel: false, // Аппаратное ускорение
+      className: 'spinner', // CSS класс
+      zIndex: 2e9, // z-index (по-умолчанию 2000000000)
+      top: '50%', // Положение сверху относительно родителя
+      left: '50%' // Положение слева относительно родителя
+     };
+     var target = document.getElementById('loading');
+     var spinner = new Spinner(opts).spin(target);
+    </script>
+      <video autoplay loop muted class="video-background">
+        <source src="https://cdn.free-stock.video/892021/galaxy-night-space-universe-cosmos-milky-way-nebula-71727-full.mp4" type="video/mp4">
+      </video> 
+    <header>
+      <h1>Добро пожаловать!
+        <span id = 'dynamic-text'></span>
+      </h1>
+    </header>
+    <nav>
+      <a href="prioritet.html" class="active">Главная</a> 
+      <a href="Biography.html">Биография</a> 
+      <a href="Portfolio.html">Портфолио</a> 
+      <a href="Contacts.html">Контакты</a>
+      </nav>
+    <main>
+      <main>
+        <article>
+          <h2>Обо мне и моих проектах</h2>
+          <p>Я начинающий веб-разработчик, и этот сайт является моим первым проектом. Здесь Вы можете ознакомиться с моей биографией, увидеть примеры моих работ в портфолио, а также связаться со мной по любым вопросам.</p>
+        </article>
+        <section>
+          <h2>Что Вы найдете на этом сайте</h2>
+          <ul>
+            <li>Информация о моей профессиональной деятельности и навыках</li>
+            <li>Примеры реализованных мною веб-проектов</li>
+            <li>Контактные данные для связи со мной</li>
+          </ul>
+        </section>
+        <aside>
+          <h2>Последние обновления</h2>
+          <p>Сайт находится в активной разработке, поэтому регулярно обновляется и дополняется новым контентом. Следите за обновлениями!</p>
+        </aside>
+      </main>
+      <footer>
+        <p>&copy; 2024 Мой первый сайт. Все права защищены.</p>
+      </footer>
+    </main>
+  </body>
+</html>
+
+
+
+
+
